@@ -37,9 +37,9 @@ export default async function Home({
       <AnimateOnScroll>
         <Weddings dict={dict} lang={lang} />
       </AnimateOnScroll>
-      <AnimateOnScroll>
+      {/* <AnimateOnScroll>
         <Restaurant dict={dict} lang={lang} />
-      </AnimateOnScroll>
+      </AnimateOnScroll> */}
 
       <AnimateOnScroll>
         <Spa dict={dict} lang={lang} />

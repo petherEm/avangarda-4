@@ -25,8 +25,8 @@ const Spa = ({ lang = "pl", dict }: SpaProps) => {
           <div className="w-full space-y-4 md:space-y-6">
             {/* First Image - Larger */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
               className="relative aspect-[3/2] w-full"
@@ -46,8 +46,8 @@ const Spa = ({ lang = "pl", dict }: SpaProps) => {
           {/* Text Content - Right Side */}
           <div className="w-full space-y-6 lg:pl-8 flex flex-col justify-start">
             <motion.h2
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.3, duration: 0.6 }}
               className="text-4xl font-alata md:text-5xl font-semibold uppercase tracking-wider"
@@ -56,8 +56,8 @@ const Spa = ({ lang = "pl", dict }: SpaProps) => {
             </motion.h2>
 
             <motion.p
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.6 }}
               className="text-base md:text-lg leading-relaxed text-primary"
@@ -68,8 +68,8 @@ const Spa = ({ lang = "pl", dict }: SpaProps) => {
 
             {/* Attractions List */}
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.7, duration: 0.6 }}
               className="space-y-3"
@@ -77,8 +77,8 @@ const Spa = ({ lang = "pl", dict }: SpaProps) => {
               {attractions.map((attraction, index) => (
                 <motion.div
                   key={attraction}
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.8 + index * 0.1, duration: 0.4 }}
                   className="flex items-center space-x-3"
@@ -92,8 +92,8 @@ const Spa = ({ lang = "pl", dict }: SpaProps) => {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 1.2, duration: 0.6 }}
               className="pt-4"
