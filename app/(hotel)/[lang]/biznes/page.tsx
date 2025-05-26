@@ -2,6 +2,7 @@ import AnimateOnScroll from "@/components/animate-on-scroll";
 import HeroImage from "@/components/hero-image";
 import BusinessHero from "@/components/modules/Business/BusinessHero";
 import BusinessIntro from "@/components/modules/Business/BusinessIntro";
+import BusinessEntertainment from "@/components/modules/Business/BusinessRest";
 import ClubCoola from "@/components/modules/Entertainment/ClubCoola";
 import WorkInProgress from "@/components/work-in-progress";
 
@@ -27,7 +28,8 @@ export default async function BusinessMainPage({
       </AnimateOnScroll>
 
       <AnimateOnScroll>
-        <ClubCoola dict={dict} lang={lang} />
+        {/* <ClubCoola dict={dict} lang={lang} /> */}
+        <BusinessEntertainment dict={dict} lang={lang} />
       </AnimateOnScroll>
     </>
   );

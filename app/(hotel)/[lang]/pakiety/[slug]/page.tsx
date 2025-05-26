@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import OffersCTA from "@/components/modules/Offers/OffersCTA";
 
 interface Params {
   lang: string;
@@ -460,33 +461,6 @@ const OffersPageId = async ({ params }: { params: Params }) => {
                 ))}
               </div>
             </div>
-
-            {/* Enhanced Call to action */}
-            <div className="bg-[#404042]  p-8 text-center text-white shadow-xl">
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">
-                {dict?.common?.interestedInOffer || "Zainteresowany tą ofertą?"}
-              </h3>
-              <p className="text-white/90 max-w-2xl mx-auto mb-6">
-                Zarezerwuj już teraz i zapewnij sobie niezapomniane chwile w
-                naszym hotelu. Liczba miejsc w tej ofercie jest ograniczona.
-              </p>
-              <div className="flex flex-wrap justify-center gap-4">
-                <Button
-                  size="lg"
-                  className="bg-[#E31C79] hover:bg-[#E31C79]/90 text-white"
-                >
-                  {dict?.common?.bookNow || "Zarezerwuj teraz"}
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white/10"
-                >
-                  {dict?.common?.contactUs || "Skontaktuj się z nami"}
-                </Button>
-              </div>
-            </div>
           </div>
         ) : (
           <div className="text-center py-12">
@@ -494,6 +468,8 @@ const OffersPageId = async ({ params }: { params: Params }) => {
           </div>
         )}
       </Container>
+      {/* Enhanced Call to action - updated with styling from GastroIntro */}
+      <OffersCTA dict={dict} lang={lang} />
     </main>
   );
 };

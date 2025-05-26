@@ -6,7 +6,15 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Clock, Download, Calendar, Phone, Info, Sparkles } from "lucide-react";
+import {
+  Clock,
+  Download,
+  Calendar,
+  Phone,
+  Info,
+  Sparkles,
+  Dumbbell,
+} from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { SPA_TREATMENTS, SPA_FEATURED_SERVICES } from "@/constants";
 import PoolSection from "@/components/pool-section";
@@ -194,6 +202,115 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
 
         {/* Pool Section */}
         <PoolSection lang={lang} dict={dict} />
+
+        {/* Gym Section */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="mb-20"
+        >
+          <h2 className="text-3xl font-semibold mb-8 text-center">Siłownia</h2>
+
+          {/* Images at the top, side by side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="relative aspect-[5/3] w-full overflow-hidden">
+              <Image
+                src="/gym/gym-06.jpg"
+                alt="Siłownia"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[5/3] w-full overflow-hidden">
+              <Image
+                src="/gym/gym-05.jpg"
+                alt="Sprzęt fitness"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Text content below in two columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Left column */}
+            <div>
+              <h3 className="text-2xl font-medium mb-4">
+                Nowoczesna siłownia Matrix
+              </h3>
+              <p className="mb-6 text-lg leading-relaxed">
+                Zapraszamy do naszej nowoczesnej siłowni, wyposażonej w
+                urządzenia firmy Matrix. Do Państwa dyspozycji są:
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 rounded-full bg-avangarda"></div>
+                  <span>bieżnia</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 rounded-full bg-avangarda"></div>
+                  <span>schody treningowe</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 rounded-full bg-avangarda"></div>
+                  <span>orbitrec</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 rounded-full bg-avangarda"></div>
+                  <span>rower poziomy</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 rounded-full bg-avangarda"></div>
+                  <span>wiosła</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 rounded-full bg-avangarda"></div>
+                  <span>stacja – trener funkcjonalny</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1.5 w-1.5 rounded-full bg-avangarda"></div>
+                  <span>atlas</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right column */}
+            <div>
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start gap-2">
+                  <div className="flex-shrink-0">
+                    <Clock className="h-5 w-5 text-avangarda mt-1" />
+                  </div>
+                  <div>
+                    <p className="font-medium">Siłownia czynna jest:</p>
+                    <p>poniedziałek-sobota 7.00-22.00</p>
+                    <p>niedziela 7.00-20.00</p>
+                  </div>
+                </div>
+              </div>
+
+              <h4 className="text-xl font-medium mb-4">Cennik</h4>
+              <div className="flex flex-wrap gap-4">
+                <div className="bg-pink-50 p-4">
+                  <p className="font-medium">Dla gości hotelowych</p>
+                  <p className="text-avangarda font-medium">BEZPŁATNY wstęp</p>
+                </div>
+                <div className="bg-pink-50 p-4">
+                  <p className="font-medium">Wejście jednorazowe</p>
+                  <p className="text-avangarda font-medium">15 zł/1h</p>
+                </div>
+                <div className="bg-pink-50 p-4">
+                  <p className="font-medium">Karnet miesięczny</p>
+                  <p className="text-avangarda font-medium">
+                    50 zł (bez limitu czasu)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
 
         {/* Salt Room Section */}
         <motion.div
@@ -401,7 +518,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <Card className="rounded-none">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-4 flex items-center">
@@ -480,6 +597,30 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   <div className="pt-2">
                     <Badge className="bg-pink-100 text-avangarda hover:bg-pink-200 rounded-none">
                       {t("spa.hours.prices.manicure")}
+                    </Badge>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="rounded-none">
+              <CardContent className="pt-6">
+                <h3 className="text-xl font-semibold mb-4 flex items-center">
+                  <Dumbbell className="h-5 w-5 mr-2 text-avangarda" />
+                  Siłownia
+                </h3>
+                <div className="space-y-4">
+                  <div>
+                    <p className="font-medium">Poniedziałek - Sobota</p>
+                    <p>7:00 - 22:00</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Niedziela</p>
+                    <p>7:00 - 20:00</p>
+                  </div>
+                  <div className="pt-2">
+                    <Badge className="bg-pink-100 text-avangarda hover:bg-pink-200 rounded-none">
+                      Goście hotelowi: BEZPŁATNIE
                     </Badge>
                   </div>
                 </div>

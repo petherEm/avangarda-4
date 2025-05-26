@@ -28,11 +28,11 @@ export default function ClubCoola() {
               transition={{ delay: 0.2 }}
               className="text-lg leading-relaxed mb-6"
             >
-              Odkryj nasz ekskluzywny klub nocny, gdzie czeka na Ciebie
-              niezapomniana rozrywka i wyjątkowa atmosfera. Profesjonalni DJ-e,
-              doskonałe drinki i nowoczesny wystrój tworzą idealne miejsce na
-              wieczorne wyjście. Nasz klub to połączenie eleganckiego designu z
-              energetyczną muzyką, która porwie Cię do tańca.
+              Zapraszamy do Klubu Coola na kręgle, bilard, dartsy, piłkarzyki.
+              Nasz klub to idealne miejsce na spędzenie czasu w gronie
+              przyjaciół lub rodziny. Oferujemy profesjonalne tory do kręgli,
+              stoły bilardowe oraz inne gry zręcznościowe, które zapewnią
+              rozrywkę dla osób w każdym wieku.
             </motion.p>
 
             <motion.div
@@ -61,15 +61,15 @@ export default function ClubCoola() {
                   <Clock className="h-5 w-5 text-avangarda" />
                   <h3 className="font-medium">Godziny otwarcia</h3>
                 </div>
-                <p className="text-sm">Czwartek - Sobota: 15:00 - 3:00</p>
-                <p className="text-sm">Niedziela: 15:00 - 2:00</p>
+                <p className="text-sm">Poniedziałek – Piątek: 16:00 – 22:00</p>
+                <p className="text-sm">Sobota - Niedziela: 10:00 – 22:00</p>
               </div>
               <div className="bg-pink-50 p-4 rounded-lg">
                 <div className="flex items-center gap-2 mb-2">
                   <Users className="h-5 w-5 text-avangarda" />
-                  <h3 className="font-medium">Rezerwacje VIP</h3>
+                  <h3 className="font-medium">Rezerwacje</h3>
                 </div>
-                <p className="text-sm">+48 123 456 789</p>
+                <p className="text-sm">Tel: 29 752 50 34 (recepcja hotelu)</p>
                 <p className="text-sm">coola@hotelavangarda.pl</p>
               </div>
             </motion.div>
@@ -96,7 +96,7 @@ export default function ClubCoola() {
                 Zapraszamy na kręgle
               </Badge>
               <h2 className="text-white text-xl font-semibold">
-                Niezapomniane chwile w doborym towarzystwie
+                Niezapomniane chwile w dobrym towarzystwie
               </h2>
             </div>
           </motion.div>
@@ -173,12 +173,85 @@ export default function ClubCoola() {
           </div>
         </motion.div>
 
-        {/* Features Section */}
+        {/* Pricing Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
+          className="mb-16"
+        >
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="h-px flex-1 bg-gray-200"></div>
+            <h2 className="text-2xl font-semibold text-center">Cennik</h2>
+            <div className="h-px flex-1 bg-gray-200"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-pink-50 p-6 rounded-lg">
+              <h3 className="text-xl font-medium mb-4 text-avangarda">
+                KRĘGLE
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex justify-between">
+                  <span>Poniedziałek – Czwartek</span>
+                  <span className="font-medium">30 zł/1 tor/1h</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Piątek</span>
+                  <span className="font-medium">65 zł/1 tor/1h</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Sobota do 16:00</span>
+                  <span className="font-medium">50 zł/1 tor/1h</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Sobota od 16:00</span>
+                  <span className="font-medium">65 zł/1 tor/1h</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Niedziela i święta</span>
+                  <span className="font-medium">50 zł/1 tor/1h</span>
+                </li>
+              </ul>
+              <Button className="mt-6 bg-avangarda hover:bg-avangarda/90">
+                Zarezerwuj tor
+              </Button>
+            </div>
+
+            <div className="bg-pink-50 p-6 rounded-lg">
+              <h3 className="text-xl font-medium mb-4 text-avangarda">
+                BILARD
+              </h3>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex justify-between">
+                  <span>Poniedziałek – Czwartek</span>
+                  <span className="font-medium">15 zł/1h</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>Piątek – Niedziela</span>
+                  <span className="font-medium">18 zł/1h</span>
+                </li>
+              </ul>
+              <div className="mt-6">
+                <h4 className="font-medium mb-2">INNE ATRAKCJE</h4>
+                <p className="text-gray-700">
+                  Darts, piłkarzyki, cymbergaj – na monety
+                </p>
+              </div>
+              <Button className="mt-6 bg-avangarda hover:bg-avangarda/90">
+                Zarezerwuj stół
+              </Button>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Features Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
           className="mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
@@ -190,33 +263,60 @@ export default function ClubCoola() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-pink-50 p-6 rounded-lg">
               <Music className="h-10 w-10 text-avangarda mb-4" />
-              <h3 className="text-xl font-medium mb-2">Najlepsza muzyka</h3>
+              <h3 className="text-xl font-medium mb-2">Kręgle</h3>
               <p className="text-gray-600 leading-relaxed">
-                Nasi DJ-e grają najnowsze hity oraz ponadczasowe klasyki. Każdy
-                weekend to inny motyw muzyczny, od house i techno po R&B i
-                hip-hop.
+                Profesjonalne tory do kręgli dla początkujących i zaawansowanych
+                graczy. Idealne na spotkania towarzyskie, imprezy firmowe czy
+                rodzinne wyjścia.
               </p>
             </div>
 
             <div className="bg-pink-50 p-6 rounded-lg">
               <Users className="h-10 w-10 text-avangarda mb-4" />
-              <h3 className="text-xl font-medium mb-2">Strefy VIP</h3>
+              <h3 className="text-xl font-medium mb-2">Bilard</h3>
               <p className="text-gray-600 leading-relaxed">
-                Ekskluzywne loże VIP z prywatną obsługą, premium alkoholami i
-                najlepszym widokiem na parkiet. Idealne na specjalne okazje i
-                celebracje.
+                Wysokiej jakości stoły bilardowe dla miłośników tej klasycznej
+                gry. Doskonała rozrywka zarówno dla amatorów, jak i bardziej
+                doświadczonych graczy.
               </p>
             </div>
 
             <div className="bg-pink-50 p-6 rounded-lg">
               <Calendar className="h-10 w-10 text-avangarda mb-4" />
-              <h3 className="text-xl font-medium mb-2">Specjalne wydarzenia</h3>
+              <h3 className="text-xl font-medium mb-2">Gry zręcznościowe</h3>
               <p className="text-gray-600 leading-relaxed">
-                Regularne wydarzenia tematyczne, występy gościnnych DJ-ów i
-                artystów, konkursy z nagrodami oraz niezapomniane imprezy
-                okolicznościowe.
+                Darts, piłkarzyki i cymbergaj na monety. Różnorodność gier
+                zapewni rozrywkę dla każdego, niezależnie od wieku i
+                preferencji.
               </p>
             </div>
+          </div>
+        </motion.div>
+
+        {/* CTA Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.6 }}
+          className="bg-gradient-to-r from-pink-500 to-avangarda p-8 rounded-lg text-white text-center"
+        >
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+            Zarezerwuj swój czas w Klubie Coola już dziś!
+          </h2>
+          <p className="mb-6 max-w-2xl mx-auto">
+            Spędź niezapomniane chwile z przyjaciółmi lub rodziną. Zadzwoń do
+            recepcji hotelu pod numer 29 752 50 34 i zarezerwuj tor do kręgli
+            lub stół bilardowy.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <Button
+              size="lg"
+              variant="secondary"
+              className="bg-white text-avangarda hover:bg-gray-100"
+            >
+              Zadzwoń teraz
+            </Button>
           </div>
         </motion.div>
       </div>

@@ -232,7 +232,7 @@ const About = ({ dict, lang }: AboutProps) => {
                     <Image
                       src="/booking.png"
                       alt="Booking.com"
-                      width={50}
+                      width={30}
                       height={16}
                       className="h-auto object-contain"
                     />
@@ -254,7 +254,7 @@ const About = ({ dict, lang }: AboutProps) => {
                     <Image
                       src="/google-logo-2.jpeg"
                       alt="Booking.com"
-                      width={50}
+                      width={30}
                       height={16}
                       className="h-auto object-contain"
                     />

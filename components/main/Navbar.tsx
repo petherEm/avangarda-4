@@ -86,11 +86,13 @@ export function Navbar({ lang, dict }: NavbarProps) {
       <SheetHeader>
         <SheetTitle>
           <Image
-            src="/avangarda-logo-sm-2.png"
+            src="/avangarda-logo-sm-4.png"
             alt="Hotel Avangarda"
-            width={50}
-            height={40}
-            className="h-auto w-[50px]"
+            width={110}
+            height={88}
+            className="h-auto w-[110px]"
+            quality={100}
+            priority
           />
         </SheetTitle>
       </SheetHeader>
@@ -156,10 +158,11 @@ export function Navbar({ lang, dict }: NavbarProps) {
             <Image
               src="/avangarda-logo-sm-4.png"
               alt="Hotel Avangarda"
-              width={60}
-              height={40}
+              width={110}
+              height={88}
               className="mt-2 h-auto w-[90px] transition-opacity duration-500 sm:w-[110px]"
               quality={100}
+              priority
             />
           </Link>
         )}

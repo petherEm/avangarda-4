@@ -36,7 +36,7 @@ export default function OutdoorEntertainment({
               viewport={{ once: true }}
               className="uppercase text-4xl md:text-5xl font-semibold tracking-wider mb-8"
             >
-              Aktywnie i zielono
+              ZDROWIE I AKTYWNOŚĆ
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -140,121 +140,6 @@ export default function OutdoorEntertainment({
           </div>
         </motion.div>
 
-        {/* Active Recreation Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="mb-16"
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="order-2 lg:order-1">
-              <h2 className="text-3xl font-semibold mb-4 tracking-wider">
-                ZDROWIE I AKTYWNOŚĆ
-              </h2>
-              <p className="text-lg mb-6 leading-relaxed">
-                Nasza okolica to doskonały teren do spacerów, Nordic Walking,
-                wycieczek rowerowych. W pobliżu znajdują się szlaki piesze i
-                rowerowe, które prowadzą przez malownicze tereny nad rzeką
-                Narew. Możemy rowniez pochwalić się:
-              </p>
-              <ul className="space-y-4 mb-6">
-                <li className="flex items-start gap-3">
-                  <Ship className="h-6 w-6 text-avangarda mt-1" />
-                  <span className="leading-relaxed">
-                    Portem Różan z kajakami, łódkami, tawerną i plażą
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Footprints className="h-10 w-10 text-avangarda mt-1" />
-                  <span className="leading-relaxed">
-                    Trasą spacerową z hotelu do portu i odtworzonym starobrukiem
-                    z zabytkowymi latarenkami. Już dzisiaj zapraszamy
-                  </span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="order-1 lg:order-2 relative aspect-[4/3] w-full overflow-hidden">
-              <Image
-                src="/outdoor/out-06.jpg"
-                alt="Aktywny wypoczynek"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-          </div>
-        </motion.div>
-
-        {/* Water Relaxation Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5 }}
-          className="mb-16"
-        >
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="relative aspect-[4/3] w-full overflow-hidden">
-              <Image
-                src="/outdoor/out-05.jpg"
-                alt="Basen rekreacyjny"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
-            </div>
-
-            <div>
-              <h2 className="text-3xl font-semibold mb-4 tracking-wider">
-                WODNY RELAKS
-              </h2>
-              <p className="text-lg mb-6 leading-relaxed">
-                Zapraszamy Państwa na basen rekreacyjny z biczami wodnymi.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 leading-relaxed">
-                <div className="bg-pink-50 p-4">
-                  <Swimming className="h-6 w-6 text-avangarda mb-2" />
-                  <h3 className="font-medium mb-1">Basen rekreacyjny</h3>
-                  <p className="text-sm text-gray-600">
-                    Komfortowy basen z atrakcjami wodnymi
-                  </p>
-                </div>
-                <div className="bg-pink-50 p-4">
-                  <Waves className="h-6 w-6 text-avangarda mb-2" />
-                  <h3 className="font-medium mb-1">Bicze wodne</h3>
-                  <p className="text-sm text-gray-600">
-                    Relaksujący masaż wodny dla ciała
-                  </p>
-                </div>
-              </div>
-
-              {/* Opening Hours Information */}
-              <div className="bg-pink-50 p-4 mb-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <Clock className="h-5 w-5 text-avangarda" />
-                  <h3 className="font-medium">Godziny otwarcia</h3>
-                </div>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div>
-                    <p className="font-medium">Poniedziałek - Piątek</p>
-                    <p>8:00 - 21:00</p>
-                  </div>
-                  <div>
-                    <p className="font-medium">Sobota - Niedziela</p>
-                    <p>9:00 - 22:00</p>
-                  </div>
-                </div>
-                <p className="text-xs text-gray-500 mt-2">
-                  * Ostatnie wejście 1 godzinę przed zamknięciem
-                </p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
         {/* Kids Attractions Section - NEW */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -342,7 +227,120 @@ export default function OutdoorEntertainment({
             </div>
           </div>
         </motion.div>
+        {/* Water Relaxation Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="mb-16"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="relative aspect-[4/3] w-full overflow-hidden">
+              <Image
+                src="/outdoor/out-05.jpg"
+                alt="Basen rekreacyjny"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
 
+            <div>
+              <h2 className="text-3xl font-semibold mb-4 tracking-wider">
+                WODNY RELAKS
+              </h2>
+              <p className="text-lg mb-6 leading-relaxed">
+                Zapraszamy Państwa na basen rekreacyjny z biczami wodnymi.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 leading-relaxed">
+                <div className="bg-pink-50 p-4">
+                  <Swimming className="h-6 w-6 text-avangarda mb-2" />
+                  <h3 className="font-medium mb-1">Basen rekreacyjny</h3>
+                  <p className="text-sm text-gray-600">
+                    Komfortowy basen z atrakcjami wodnymi
+                  </p>
+                </div>
+                <div className="bg-pink-50 p-4">
+                  <Waves className="h-6 w-6 text-avangarda mb-2" />
+                  <h3 className="font-medium mb-1">Bicze wodne</h3>
+                  <p className="text-sm text-gray-600">
+                    Relaksujący masaż wodny dla ciała
+                  </p>
+                </div>
+              </div>
+
+              {/* Opening Hours Information */}
+              <div className="bg-pink-50 p-4 mb-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Clock className="h-5 w-5 text-avangarda" />
+                  <h3 className="font-medium">Godziny otwarcia</h3>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-sm">
+                  <div>
+                    <p className="font-medium">Poniedziałek - Piątek</p>
+                    <p>8:00 - 21:00</p>
+                  </div>
+                  <div>
+                    <p className="font-medium">Sobota - Niedziela</p>
+                    <p>9:00 - 22:00</p>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-500 mt-2">
+                  * Ostatnie wejście 1 godzinę przed zamknięciem
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Active Recreation Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="mb-16"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="order-2 lg:order-1">
+              <h2 className="text-3xl font-semibold mb-4 tracking-wider">
+                AKTYWNIE I ZIELONO
+              </h2>
+              <p className="text-lg mb-6 leading-relaxed">
+                Nasza okolica to doskonały teren do spacerów, Nordic Walking,
+                wycieczek rowerowych. W pobliżu znajdują się szlaki piesze i
+                rowerowe, które prowadzą przez malownicze tereny nad rzeką
+                Narew. Możemy rowniez pochwalić się:
+              </p>
+              <ul className="space-y-4 mb-6">
+                <li className="flex items-start gap-3">
+                  <Ship className="h-6 w-6 text-avangarda mt-1" />
+                  <span className="leading-relaxed">
+                    Portem Różan z kajakami, łódkami, tawerną i plażą
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Footprints className="h-10 w-10 text-avangarda mt-1" />
+                  <span className="leading-relaxed">
+                    Trasą spacerową z hotelu do portu i odtworzonym starobrukiem
+                    z zabytkowymi latarenkami. Już dzisiaj zapraszamy
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="order-1 lg:order-2 relative aspect-[4/3] w-full overflow-hidden">
+              <Image
+                src="/outdoor/out-06.jpg"
+                alt="Aktywny wypoczynek"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
+            </div>
+          </div>
+        </motion.div>
         <PoolSection lang={lang} dict={dict} />
       </div>
     </Container>

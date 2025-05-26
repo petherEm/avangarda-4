@@ -28,10 +28,6 @@ export default async function EntertainmentMainPage({
       <AnimateOnScroll>
         <ClubCoola dict={dict} lang={lang} />
       </AnimateOnScroll>
-
-      <AnimateOnScroll>
-        <WorkInProgress dict={dict} lang={lang} />
-      </AnimateOnScroll>
     </>
   );
 }
